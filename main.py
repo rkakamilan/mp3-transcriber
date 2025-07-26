@@ -69,7 +69,6 @@ class WhisperTranscriptionThread(QThread):
                 logger.info(f"Whisperモデル '{self.model_size}' をロード中...")
                 self.log_signal.emit(f"Whisperモデル '{self.model_size}' をロード中...")
                 self.progress_signal.emit(10)
-                
                 # Whisperモジュールのインポート
                 try:
                     logger.debug("Whisperモジュールをインポート中...")
